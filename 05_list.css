@@ -1,0 +1,17 @@
+/* 클래스 list의 자식인 li를 선택해서 장식모양 변경하기 */
+.list>li{
+    list-style-type: square;
+}
+/* 클래스 nav의 자식인 li를 선택해서 장식 제거하기 */
+.nav>li{
+    /* list-style-type: none; */
+    list-style: none;
+}
+/* 클래스 menu2의 자식인 li를 선택해서 문자열로 놓자 */
+.menu2>li{
+    /* list-style-type: decimal-leading-zero; */
+    /* list-style-type: lower-latin; 라틴문자 */
+    /* list-style-position: outside; */
+    list-style: upper-alpha inside;
+    /* 띄어쓰기로 한번에 정하기도 가능 */
+}

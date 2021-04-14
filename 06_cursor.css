@@ -1,0 +1,85 @@
+.cursor1{
+    cursor: all-scroll;
+    /* 사방으로 화살표가 나타남 */
+}
+
+.cursor2{
+    cursor: auto;
+    /* 기본이 들어간다. */
+}
+
+.cursor3{
+    cursor: cell;
+    /* 십자가 모양 */
+}
+
+.cursor4{
+    cursor: col-resize;
+    /* 양옆에 벌리는 모양 */
+}
+
+.cursor5{
+    cursor: context-menu;
+    /* 마우스 모양 */
+}
+
+.cursor6{
+    cursor: copy;
+    /* 마우스 옆에 + */
+}
+
+.cursor7{
+    cursor: crosshair;
+    /* + */
+}
+
+.cursor8{
+    cursor: e-resize;
+    /* 양옆 화살표 */
+}
+
+.cursor9{
+    cursor: grab;
+    /* 손바닥 */
+}
+
+.cursor10{
+    cursor: grabbing;
+    /* 주먹 */
+}
+
+.cursor11{
+    cursor: help;
+    /* 마우스 옆 물음표 */
+}
+
+.cursor12{
+    cursor: move;
+    /* 십자가 화살표 */
+}
+
+.cursor13{
+    cursor: pointer;
+    /* 손가락 클릭 */
+}
+
+.cursor14{
+    cursor: progress;
+    /* 버퍼링 */
+}
+
+.cursor15{
+    cursor: zoom-in;
+    /* +독보기 */
+}
+
+.cursor16{
+    cursor: zoom-out;
+    /* -독보기 */
+}
+
+.cursor17{
+    cursor: url("../images/star.svg"),auto;
+    /* ../는 전파일로 돌아가라 */
+    /* 지정한 아이콘 보여짐 */
+}

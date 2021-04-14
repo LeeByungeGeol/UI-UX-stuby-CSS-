@@ -1,0 +1,10 @@
+/* menu의 자식으로 있는 li 그 자식으로 있는  a의 글자색 밑줄 */
+.menu>li>a{
+    color: pink;
+    text-decoration: none;
+}
+/*.menu li a{
+    color: orange;
+    text-decoration: none;
+}*/
+/* >는 자식을 찾아라, 띄어쓰기는 후손을 찾아라 */

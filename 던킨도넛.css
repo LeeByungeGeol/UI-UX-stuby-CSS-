@@ -1,0 +1,38 @@
+li{
+    list-style: none;
+}
+.menuWrap>li>a{
+    display: block;
+    width: 60px;
+    height: 35px;
+    background-position: 0px 0px;
+    text-indent: -9999px;
+}
+.menuWrap>.menu1>a{
+    background-image: url(../images/gnb_menu.png);
+    background-position: -70px 0px;
+}
+.menuWrap>.menu1>a:hover{
+    background-position: 60px 0px;
+}
+.menuWrap>.menu2>a{
+    background-image: url(../images/gnb_menu.png);
+    background-position: -70px -60px;
+}
+.menuWrap>.menu2>a:hover{
+    background-position: -140px -60px;
+}
+.menuWrap>.menu3>a{
+    background-image: url(../images/gnb_menu.png);
+    background-position: -70px -120px;
+}
+.menuWrap>.menu3>a:hover{
+    background-position: -340px -120px;
+}
+.menuWrap>.menu4>a{
+    background-image: url(../images/gnb_menu.png);
+    background-position: -70px -180px;
+}
+.menuWrap>.menu4>a:hover{
+    background-position: -740px -180px;
+}

@@ -1,0 +1,21 @@
+body{
+    background-color: wheat;
+    background-image: url(../images/enter.png);
+    background-repeat: no-repeat;
+    /* x축으로 y축으로 가운데에 이미지를 넣고싶다. */
+    /* background-position-x: center; */
+    /* background-position-y: center; */
+    background-position: center center;
+    /* 그림을 고정하고 싶다. */
+    background-attachment: fixed;
+    /* 한번에 쓰기 (순서는 꼭 지켜야 한다. -빼먹는건 가능) */
+    /* background: wheat url(../images/enter.png) no-repeat center center fixed; */
+}
+/* h1에는 배경 그림 넣기 로고 */
+h1{
+    background-image:url(../images/h1_01.png);
+    /* x축으로만 반복해라 */
+    /* background-repeat: repeat-x; */
+    /* 반복하지말고 하나만 하자. */
+    background-repeat: no-repeat;
+}

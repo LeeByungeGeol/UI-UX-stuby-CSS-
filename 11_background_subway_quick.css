@@ -1,0 +1,20 @@
+/* quickWrap자식인 li그 자식인 a에 배경그림을 넣기 */
+/* 블록안에 이미지를 넣게 되면 전체가 들어가지지만 인라인 요소에 이미지를 넣게 된다면 그 영역부분만 들어가게 된다. */
+.quickWrap>li>a{
+    /* 이 인라인 요소를 블록처럼 보이도록 만들어보자 */
+    display: block;
+    height: 70px;
+    width: 70px;
+    background-image: url(../images/icon_quickmenu.png);
+}
+
+.quickWrap>.quick2>a{
+    /* 왼쪽으로 이동하면 - 오른쪽이면 + 아래쪽이면 - 위쪽이면 + */
+    background-position-x:-70px ;
+}
+.quickWrap>.quick3>a{
+    background-position-x:-140px ;
+}
+.quickWrap>.quick4>a{
+    background-position-x:-210px ;
+}

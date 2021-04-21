@@ -1,0 +1,32 @@
+body{
+    margin:0;
+}
+
+h1{
+    background-color: bisque;
+    margin-block-start: 0;
+}
+div{
+    background-color: cornflowerblue;
+}
+p{
+    background-color: coral;
+}
+.box1{
+    /* box1번 위에 30px만큼 공간을 남기고 싶다. */
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.box2{
+    /* 위 아래 50px 좌우 100 */
+    margin: 50px 100px;
+}
+/* margin값이 겹칠경우 큰 숫자만 적용된다. */
+.box3{
+    margin: 10px 50px 100px;
+    /* 위 좌/우 아래 */
+}
+.box4{
+    margin: 100px 20px 50px 100px;
+    /* 위 오른쪽 아래쪽 왼쪽 */
+ }

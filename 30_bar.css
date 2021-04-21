@@ -1,0 +1,14 @@
+/* footmenu>li 뒤에 구분선 넣기 */
+.footmenu>li::after{
+    /* content:"ㅣ";
+    margin: 0 10px;
+    font-size: 15px; */
+    content: "";
+    width: 1px;
+    height: 10px;
+    background-color: black;
+    display: block;
+}
+.footmenu>li:last-child::after{
+    display: none;
+}

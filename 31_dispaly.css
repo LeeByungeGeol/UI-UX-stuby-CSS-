@@ -1,0 +1,45 @@
+body,h1,h2,h3,h4,h5,h6,p,ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+/* .inline 안에 li에 테두리선 넣기 */
+
+.inline>li{
+    border: 1px solid black;
+    /* inline처럼 보여라 */
+    display: inline;
+    width: 100px;
+}
+/* .blockspan을 block으로 만들자 */
+.block>span{
+    border: 1px solid blue;
+    display: block;
+    width: 200px;
+    height: 50px;
+}
+/* inblock */
+.inblock{
+    text-align: center;
+}
+.inblock>li{
+    border: 1px dashed #999;
+    /* inline요소와 block요소둘다 가질수 있다. */
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+.table>li{
+    display: table-cell;
+    border: 1px solid green;
+    width: 200px;
+    height: 120px;
+    text-align: center;
+    vertical-align: middle;
+}

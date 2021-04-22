@@ -1,0 +1,44 @@
+/* 홈페이지 공통사항 */
+body,h1,h2,h3,h4,h5,p,ul,li,ol,dt,dd,dl{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #454545;
+}
+body{
+    font-family:NanumBarunFothic,"나눔바름고딕","Malgun Gothic",sans-serif;
+    /* 1번째꺼가 없다면 2번째 2번째가 없다면 3번째 -> */
+    font-size: 1em;
+    color: #454545;
+}
+#nav{
+    width: 300px;
+    border-top: 2px solid #293ba8;
+}
+#nav>li{
+    line-height: 60px;
+    border-bottom: 1px solid #293ba8;
+}
+#nav>li>a{
+    display: block;
+    line-height: 60px;
+    text-indent: 20px;
+}
+
+.sub{
+    display: none;
+    background: pink;
+    margin: 0 20px;
+}
+/* li에 마우스를 위치 시키면 .sub가 나타나도록 한닫. */
+/* #nav>li>a:hover + .sub{
+    display: block;
+} */
+#nav>li:hover .sub{
+    display: block;
+}

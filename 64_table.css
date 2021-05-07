@@ -1,0 +1,33 @@
+table,th,td{
+    /* 경계선을 하나로 묶자 */
+    border-collapse: collapse;
+}
+
+table{
+    border: 2px solid #1e51a8;
+    width: 800px;
+}
+tr{
+    border: 1px solid red;
+}
+th{
+    border: 1px solid #999;
+    padding: 10px;
+    background: #ddd;
+}
+td{
+    border: 1px solid #999;
+    padding: 5px;
+}
+table strong{
+    color: green;
+}
+table span{
+    color: orange;
+}
+table td:first-child{
+    border-left: 0;
+}
+table td:last-child{
+    border-right: none;
+}

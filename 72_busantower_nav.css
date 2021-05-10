@@ -1,0 +1,41 @@
+#nav{
+    margin: 100px 200px;
+}
+#nav>li{
+    float: left;
+    padding: 0 20px;
+    position: relative;
+}
+#nav>li::after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 10px;
+    background: #333;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%) skewX(-15deg);
+}
+#nav>li>a{
+    color: #333;
+    font-weight: bolder;
+    font-size: 20px;
+}
+#nav>li>a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 1px;
+    background: purple;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
+#nav>li:hover a::after{
+    width: 100%;
+}
+#nav>li:last-child::after{
+    display: none;
+}

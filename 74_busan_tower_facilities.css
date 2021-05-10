@@ -1,0 +1,50 @@
+.box{
+    width: 381px;
+    height: 263px;
+    border: 1px solid blue;
+    background: url(../images/facilities_list01.jpg);
+    text-indent: -9999px;
+    position: relative;
+    margin: 20px;
+}
+.box::after,.box::before,.box>a::after,.box>a::before{
+    content: "";
+    display: block;
+    background: blue;
+    position: absolute;
+    transition: 1s;
+}
+.box::after{
+    width:0;
+    height: 1px;
+    top: -1px;
+    left: 0;
+}
+.box::before{
+    width: 0;
+    height: 1px;
+    right: 0;
+    bottom: -1px;
+}
+.box>a::after{
+    width: 1px;
+    height: 0;
+    right: -1px;
+    top: 0;
+    
+}
+.box>a::before{
+    width: 1px;
+    height: 0;
+    left: -1px;
+    bottom: 0;
+}
+.box:hover{
+    border: 1px solid transparent;
+}
+.box:hover::after,.box:hover::before{
+    width: calc(100% + 1px);
+}
+.box:hover a::after,.box:hover a::before{
+    height: calc(100% + 1px);
+}

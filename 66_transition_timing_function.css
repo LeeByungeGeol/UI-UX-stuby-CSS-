@@ -1,0 +1,40 @@
+#Wrap{
+    border: 5px solid black;
+    width: 600px;
+}
+#Wrap>div{
+    width: 10px;
+    height: 50px;
+    margin: 10px;
+    background-color: cornflowerblue;
+    transition-duration: 6s;
+}
+#Wrap:hover>div{
+    /* 연산할때는 연산자랑 연산자랑 띄어쓰기를 해야한다. */
+    width: calc(100% - 20px);
+}
+/* box2 같은 속도로 */
+#Wrap>.box2{
+    transition-timing-function: linear;
+}
+#Wrap>.box3{
+    /* .box3 느리게가다가 점점 빨라짐 */
+    /* transition-timing-function: ease-in; */
+    /* .box3 빨리가다가 점점 느려짐*/
+    transition-timing-function: ease-out;
+}
+#Wrap>.box4{
+    /* 빨리가다가 늦게도착하고 늦게가다가 빨리돌아옴 */
+    transition-timing-function: ease-in-out;
+}
+#Wrap>.box5{
+    /* 마지막에 짠하고 한번데 도착한다. */
+    /* transition-timing-function: step-end; */
+    /* 한번에 미리 도착한다. */
+    /* transition-timing-function: step-start */
+    /* 3단계에 걸쳐서 짠 짠 짠 커진다. */
+    transition-timing-function: steps(3);
+}
+#Wrap>.box6{
+    transition-timing-function: cubic-bezier(.61,1.43,.11,-0.53);
+}

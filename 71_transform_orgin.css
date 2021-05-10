@@ -1,0 +1,23 @@
+body{
+    padding: 100px;
+}
+div{
+    width: 100px;
+    height: 100px;
+    background: pink;
+    border: 5px solid black;
+    margin: 10px;
+    transition: 0.5s;
+}
+div:hover{
+    /* 2배로 커짐 */
+    /* transform: scale(2); */
+    transform: rotate(180deg);
+}
+.box2{
+    /* 오른쪽 아래끝쪽으로 부터 커져라,회전해라*/
+    transform-origin: right bottom;
+}
+.box3{
+    transform-origin: 80% 0;
+}

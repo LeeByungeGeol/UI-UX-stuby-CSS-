@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>79_animation</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: royalblue;
+            position: absolute;
+            /* 어떤 이름의 애니메이션을 실핼할 것인가 */
+            animation-name: ani;
+            /* 얼마나 애니메이션을 할것인가 */
+            animation-duration: 3s;
+            /* 몇번이나 반복을 할것 인가 */
+            animation-iteration-count: infinite;
+            /* 번갈아가면서 왔다 갔다 할것 인가 */
+            animation-direction: alternate;
+            left: 10px;
+            top: 10px;
+        }
+        @keyframes ani{
+            from{
+                left: 10px;
+                top: 10px;
+            }
+            50%{
+                left: 500px;
+                top: 500px;
+            }
+            to{
+                left: 1000px;
+                top: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

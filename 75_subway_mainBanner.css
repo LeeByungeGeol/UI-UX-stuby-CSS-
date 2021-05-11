@@ -1,0 +1,74 @@
+#mainBanner{
+    width: 100%;
+    height: 440px;
+    overflow: hidden;
+    position: relative;
+}
+.banner{
+    width: 400%;
+    transition: 1s;
+}
+/* li안에 4개의 Banner가 있다 이 베너는 100%에서 4를 나눈값 25% */
+/* mainBanner가 100%로 들어가야 하기 때문에 부모를 *4한 400%가 된다. */
+.banner>li{
+    width: 25%;
+    height: 440px;
+    float: left;
+}
+.banner>li>a{
+    display: block;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.banner>li:first-child>a{
+    background-image: url(../images/main_PC_1920x440_20210503092019220.png);
+}
+.banner>li:nth-child(2)>a{
+    background-image: url(../images/main_PC_1920x440_20210503113022868.png);
+}
+.banner>li:nth-child(3)>a{
+    background-image: url(../images/main_PC_1920x440_20210205043330107.jpg);
+}
+.banner>li:nth-child(4)>a{
+    background-image: url(../images/main_PC_1920x440_20201006040046969.jpg);
+}
+input{
+    position: absolute;
+}
+label{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    background: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+label:first-of-type{
+
+}
+label:nth-of-type(2){
+    margin-left: 20px;
+}
+label:nth-of-type(3){
+    margin-left: 40px;
+}
+label:nth-of-type(4){
+    margin-left: 60px;
+}
+#btn1:checked ~ .banner{
+    margin-left: 0%;
+}
+#btn2:checked ~ .banner{
+    margin-left: -100%;
+}
+#btn3:checked ~ .banner{
+    margin-left: -200%;
+}
+#btn4:checked ~ .banner{
+    margin-left: -300%;
+}
+input:checked +label{
+    background: yellow;
+}

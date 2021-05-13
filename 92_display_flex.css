@@ -1,0 +1,26 @@
+#wrap{
+    width: 600px;
+    background-color: bisque;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#wrap>div{
+    height: 200px;
+    border: 5px solid black;
+    box-sizing: border-box;
+}
+/* 마크업 순서와 상관없이 순서를 바꾸고 싶다면 order로 순위를 설정해라 */
+.box1{
+    width: 250px;
+    order: 1;
+}
+.box2{
+    width: 500px;
+    order: 3;
+
+}
+.box3{
+    width: 300px;
+    order: 2;
+}

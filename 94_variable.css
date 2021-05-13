@@ -1,0 +1,15 @@
+/* 전역변수 */
+:root{
+    --blue: skyblue;
+    --green:green;
+    --pink:hotpink;
+}
+header{
+    border-top: 5px solid var(--green);
+}
+
+/* 지역변수 */
+#container{
+    --red:rgb(241,165,165);
+    color: var(--red);
+}

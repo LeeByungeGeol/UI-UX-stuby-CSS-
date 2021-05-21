@@ -1,0 +1,136 @@
+/* p c */
+.center{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255,0,0,0.3);
+    position: relative;
+}
+/* 1. pc에서 사라진 요소를 제거하기 */
+.hamBtn{
+    display: none;
+}
+
+/* header */
+header{
+    background: #efefef;
+    padding-bottom: 50px;
+}
+.logo{
+    float: left;
+    margin-top: 20px;
+}
+.gnb{
+    float: right;
+}
+.gnb>li{
+    float: left;
+    margin-left: 15px;
+}
+nav{
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+#nav>li{
+    float: left;
+    margin-left: 80px;
+    font-size: 19px;
+}
+/* mainBanner */
+#mainBanner{
+    height: 400px;
+    background: coral;
+}
+
+/* container */
+#container{
+    padding-bottom: 50px;
+}
+.con1{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+.con1>div{
+    height: 200px;
+    /* float: left; */
+}
+.con1>.box1{
+    width: 24%;
+    background: green;
+}
+.con1>.box2{
+    width: 48%;
+    background: cornflowerblue;
+}
+.con1>.box3{
+    width: 24%;
+    background: cornsilk;
+}
+.con2{
+}
+.con2>div{
+    float: left;
+    width: 48%;
+    height: 150px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.con2>.right{
+    float:right;
+}
+
+
+/* footer */
+footer{
+    background: #333;
+    line-height: 100px;
+}
+@media screen and (max-width:767px){
+    /* 1. 제거하기 */
+    .gnd{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    /* 2. 보이기 */
+    .hamBtn{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
+    /* 3. 100% 만들기 */
+    .center{
+        width: 100%;
+    }
+    header{
+        padding-bottom:10px;
+    }
+    .con1{
+        flex-wrap: wrap;
+    }
+    .con1>.box1{
+        order: 2;
+        width: 48%;
+    }
+    .con1>.box2{
+        order: 1;
+        width: 100%;
+    }
+    .con1>.box3{
+        order: 3;
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    /* .con1>div,.con2>div{
+        width: 100% !important;
+    } */
+    .con1>.box1, .con1>.box3, .con2>div{
+        width: 100%;
+    }
+
+}

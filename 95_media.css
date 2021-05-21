@@ -1,0 +1,32 @@
+/* 기본 pc 1024px~1920px */
+body{
+    background: #eee;
+}
+.iTitle,.mTitle{
+    display: none;
+}
+/* ipad 768px`1023px */
+@media screen and (min-width:767px) and (max-width: 1023px){
+    body{
+        background: skyblue;
+    }
+    .pcTitle,.mTitle{
+        display: none;
+    }
+    .iTitle{
+        display: block;
+    }
+}
+
+/* mobile 0px~767px */
+@media screen and (max-width:767px){
+    body{
+        background: pink;
+    }
+    .pcTitle,.iTitle{
+        display: none;
+    }
+    .mTitle{
+        display: block;
+    }
+}
